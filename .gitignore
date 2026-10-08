@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+*.pem
+*.key
+*.pfx
+evidence/private/
+samples/dist/
+*.zip

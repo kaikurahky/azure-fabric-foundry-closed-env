@@ -1,0 +1,5 @@
+azure-ai-projects==2.7.0
+azure-identity==1.26.0
+psycopg[binary]==3.3.6
+agent-framework==1.20.0
+agent-framework-foundry-hosting==1.0.0b261002

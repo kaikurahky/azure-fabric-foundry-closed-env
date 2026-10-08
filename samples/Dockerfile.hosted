@@ -1,0 +1,8 @@
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements-hosted.txt .
+RUN pip install --no-cache-dir -r requirements-hosted.txt
+COPY network_probe.py hosted_main.py ./
+ENV PGSSLROOTCERT=/etc/ssl/certs/ca-certificates.crt
+EXPOSE 8088
+CMD ["python", "hosted_main.py"]
